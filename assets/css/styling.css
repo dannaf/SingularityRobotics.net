@@ -1,0 +1,12 @@
+---
+---
+/* Import the original theme's styling */
+@import "jekyll-theme-minimal";
+
+/* Override only the .wrapper container for centering */
+.wrapper {
+    /* Retain the original theme's max width */
+    max-width: 640px; 
+    /* This standard CSS technique centers the block element */
+    margin: 0 auto; 
+}
