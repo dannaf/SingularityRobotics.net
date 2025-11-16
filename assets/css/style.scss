@@ -2,26 +2,21 @@
 ---
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700');
 
-// Override the main container width and margin to center content
+/* Use the original styles, but apply centering to the main container */
 .wrapper {
-    width: 90%; /* Use a percentage for better scaling */
-    max-width: 900px; /* Optional: Sets a maximum width */
-    margin: 0 auto; /* This centers the container horizontally */
-    padding-top: 2rem;
+    /* Retain the original theme's max width */
+    max-width: 640px; 
+    /* Apply horizontal centering using auto margins */
+    margin-right: auto;
+    margin-left: auto;
+    /* Retain original padding/spacing */
+    padding-left: 200px;
 }
 
-// Override the header/sidebar positioning
+/* Ensure the header/sidebar is correctly positioned within the new centered wrapper */
 header {
-    float: none; /* Remove the theme's left float */
-    width: auto; /* Allow header to take full width */
-    text-align: center; /* Center the text inside the header */
-    padding-bottom: 2rem;
-    border-bottom: 1px solid #e5e5e5;
-}
-
-// Ensure content and section elements are also centered or full-width
-section {
-    float: none;
-    width: auto;
-    padding-top: 2rem;
+    /* Keep the original left positioning */
+    left: auto; 
+    /* The original theme positions the header relative to the wrapper */
+    margin-left: -200px; 
 }
